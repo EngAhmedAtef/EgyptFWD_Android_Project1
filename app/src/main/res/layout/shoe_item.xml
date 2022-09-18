@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="Shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+        <import type="com.udacity.shoestore.Converter"/>
+    </data>
+
+<!--    Using a constraint layout to add better position the views and to add proper margin for every layout added to the list.-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/shoeItemNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{@string/shoe_name_format(Shoe.name)}"
+            app:layout_constraintBottom_toTopOf="@+id/shoeItemCompanyText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/shoeItemImage"
+            app:layout_constraintTop_toTopOf="@+id/shoeItemImage" />
+
+        <TextView
+            android:id="@+id/shoeItemCompanyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@{@string/shoe_company_format(Shoe.company)}"
+            app:layout_constraintBottom_toTopOf="@+id/shoeItemSizeText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/shoeItemImage"
+            app:layout_constraintTop_toBottomOf="@+id/shoeItemNameText" />
+
+        <TextView
+            android:id="@+id/shoeItemSizeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@{@string/shoe_size_format(Converter.doubleToString(Shoe.size))}"
+            app:layout_constraintBottom_toTopOf="@+id/shoeItemDescriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/shoeItemImage"
+            app:layout_constraintTop_toBottomOf="@+id/shoeItemCompanyText" />
+
+        <TextView
+            android:id="@+id/shoeItemDescriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@{@string/shoe_description_format(Shoe.description)}"
+            app:layout_constraintBottom_toBottomOf="@+id/shoeItemImage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/shoeItemImage"
+            app:layout_constraintTop_toBottomOf="@+id/shoeItemSizeText" />
+
+        <ImageView
+            android:id="@+id/shoeItemImage"
+            android:layout_width="149dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background"
+            app:imgUrl="@{Shoe.imgUrl}"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="login">Login</string>
+    <string name="emailText">Email:</string>
+    <string name="passwordText">Password:</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="register">Register</string>
+    <string name="welcome_header">Welcome</string>
+    <string name="welcome_text">Hello and welcome to the app!
+        This is a straightforward shoe app that displays a list of shoes. You can add new shoes to the list.
+        Click the button below for more information on how to use the app.</string>
+    <string name="next">Next</string>
+    <string name="instructions_header">Instructions</string>
+    <string name="instructions_text">The following screen displays a list of all the shoes found in the list.
+By making one, you can add a shoe to the list.
+The creation screen is accessed by tapping the bottom right button. Fill out all of the shoe information and tap the save button.
+If you change your mind, you can cancel the addition and return to the shoe list screen by tapping the cancel button.</string>
+    <string name="add_a_shoe">Add a shoe</string>
+    <string name="shoe_name">Shoe Name:</string>
+    <string name="shoe_company">Shoe Company:</string>
+    <string name="shoe_size">Shoe Size:</string>
+    <string name="shoe_description">Shoe Description:</string>
+    <string name="create_a_shoe">Create a shoe</string>
+    <string name="enter_shoe_name">Enter shoe name</string>
+    <string name="enter_shoe_company">Enter shoe company</string>
+    <string name="enter_shoe_size">Enter shoe size</string>
+    <string name="enter_shoe_description">Enter shoe description</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="imageUrl">Image Url:</string>
+    <string name="enter_image_url">Enter image url</string>
+    <string name="logOut">Logout</string>
+    <string name="shoe_name_format">Shoe Name: %s</string>
+    <string name="shoe_company_format">Shoe Company: %s</string>
+    <string name="shoe_size_format">Shoe Size: %s</string>
+    <string name="shoe_description_format">Shoe Description: %s</string>
+</resources>

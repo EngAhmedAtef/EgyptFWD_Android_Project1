@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?><!--Using LinearLayout as a ConstraintLayout is not required for this simple design-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<!--    Making the whole layout scrollable in case the user rotated the screen.-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            tools:context=".InstructionsFragment">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:singleLine="false"
+                android:text="@string/instructions_header"
+                android:textAlignment="center"
+                android:textSize="48sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/instructions_text"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:text="@string/next"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>

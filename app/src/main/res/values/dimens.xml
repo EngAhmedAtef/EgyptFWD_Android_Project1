@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bigText">48sp</dimen>
+    <dimen name="smallText">16sp</dimen>
+    <dimen name="textMargin">48dp</dimen>
+    <dimen name="shoeDetailSmallText">18sp</dimen>
+</resources>
